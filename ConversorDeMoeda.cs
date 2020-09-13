@@ -19,3 +19,29 @@ namespace ConversorDolar
 
     }
 }
+
+
+using System;
+
+namespace ConversorDolar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+       
+            Console.WriteLine("Qual é a cotação do dólar?");
+            double cotacao = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Quantos dólares você vai comprar?");
+            double dolares = double.Parse(Console.ReadLine());
+
+            double result = ConversorDeMoeda.DolarParaReal(cotacao, dolares);
+
+            Console.WriteLine("valor a ser pago em reais R$" + result);
+
+
+
+        }
+    }
+}
